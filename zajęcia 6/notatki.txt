@@ -1,0 +1,24 @@
+Zajęcia 6 Dokumentacja i specyfikacja wymagań Stemming
+!
+# Dane tekstowe mogą zawierać różne rodzaje apostrofów:
+#
+# klasyczny: ' (U+0027)
+#
+# typograficzny prawy: ’ (U+2019)
+#
+# typograficzny lewy: ‘ (U+2018)
+# Zamiana wszystkich rodzajów apostrofów na klasyczny '
+  text <- gsub("[\u2019\u2018\u0060\u00B4]", "'", text)
+stemming vs lemmatyzacja
+stemming - ściśle obcinanie końcówek; powstają nie lingwistyczne stem (temat)
+organizational -> organiz
+organized -> organ
+Typy uzupełnienia:
+prevalent (częstości), first, longest, shortest, random
+text <- c("operation", "operative", "operatives", "operational")
+stemmed_text <- stemDocument(text)
+completed_text <- stemCompletion(stemmed_text, dictionary=text, type="first")
+>completed_text
+  opera    oper    oper    oper    oper
+"opera" "opera" "opera" "opera" "opera"
+#i tak tekst o szpiegach zamienił się w tekst o operze
