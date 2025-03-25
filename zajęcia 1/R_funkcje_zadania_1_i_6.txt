@@ -1,0 +1,27 @@
+#Zadanie 1
+
+kostka = function(n)
+{
+	return (sample(c(1, 2, 3, 4, 5, 6), n, TRUE))
+}
+
+
+#Zadanie 6
+
+przyznaj_nagrode = function()
+{
+	x = sample(c(1, 2, 3, 4, 5, 6), 1)
+	if (x == 6)
+	{
+		tekst = "Super bonus!"
+	}
+	else if (x == 4 || x == 5)
+	{
+		tekst = "Nagroda standardowa"
+	}
+	else
+	{
+		tekst = "Brak nagrody..."
+	}
+	return (tekst)
+}
