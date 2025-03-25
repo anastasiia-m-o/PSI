@@ -1,0 +1,9 @@
+Zajęcia 3 Gromadzenie i analiza wymagań 04.03.2025
+
+\\do zajęć 2 dostępne rozwiązanie bez biblioteki qdap wymagającej Java
+
+https://htmlpreview.github.io
+
+wymagania funkcjonalne: liczyć częstotliwość występowania słów, generować chmury myśli
+wymagania niefunkcjonalne: system ma generować wyniki szybko, sposób wprowadzania danych musi być wygodny
+
