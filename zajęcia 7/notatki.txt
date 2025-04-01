@@ -1,0 +1,17 @@
+Zajęcia 7 01.04.2025
+Podejście Reproducible research oraz Klastrowanie
+ML -  technologia pozwalająca systemowi samodzielnie się doskonalić na podstawie dostarczanych mu danych.
+dane poziome - więcej klientów, dane pionowe - więcej danych o każdym kliencie
+Jeden z podziałów ML na szerokie kategorie: Supervised, unsupervised, reinforced (nadzorowasne, nienadzorowane, przez wzmacnianie)
+Supervised: zbiór treningowy, (walidacyjny), testowy
+IBM Deep Blue
+
+Czy są większe platformy BEZ "AI-driven recommendations"?
+
+Iloczyn skalarny do mierzenia podobieństw wektorów
+
+https://spotintelligence.com/2023/09/07/vector-space-model/amp/
+
+***
+
+Jakie elementy dokumentacji powinny znaleźć się w projekcie, aby umożliwić jego odtworzenie przez inną osobę?
