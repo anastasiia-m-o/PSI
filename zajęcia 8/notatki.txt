@@ -1,0 +1,46 @@
+sparse entries - elementy macierzy = 0
+non-sparse entries - elementy macierzy > 0
+klastrowanie - uczenie maszynowe nienadzorowane
+
+write.csv(dtm_m, file="DTM.csv")
+gdzie dtm_m - nazwa macierzy
+
+dtm <- DocumentTermMatrix(corpus_completed)
+rows - documnets, columns - terms
+  Terms
+Docs                                 death finds kill matt mother realizes returns tornado tries white
+  Action__Bullet_Train2022.txt          33     3   16    1      0        3       1       0     3    29
+  Action__Twisters2024.txt               3     1    1    0      1        1       2      28     0     0
+  Back_in_Action_2025.txt                1     4    1   25      2        1       0       0     3     0
+  Dark_Comedy__Menu2022.txt              1     1    4    0      1        0       3       0     1     0
+  Minecraft_2025.txt                     0     1    0    0      0        3       1       0     1     0
+  Supernatural__Night_Swim2024.txt       0     1    1    0      1        1       1       0     2     0
+  Supernatural__Smile2022.txt            5     4    5    0      7        8       2       0     4     0
+  Thriller_Psych__Heretic2024.txt        0     1    2    0      0        5       1       0     2     0
+  Thriller_SciFi__Caddo_Lake2024.txt     1     5    0    0     11        4       8       0     4     0
+  Thriller_SciFi__Companion2025.txt      1     1    7    0      0        0       3       0     1     0
+
+tdm <- TermDocumentMatrix(corpus_completed)
+rows - terms, columns - documents
+Terms      Action__Bullet_Train2022.txt Action__Twisters2024.txt Back_in_Action_2025.txt Dark_Comedy__Menu2022.txt
+  death                              33                        3                       1                         1
+  finds                               3                        1                       4                         1
+  kill                               16                        1                       1                         4
+  matt                                1                        0                      25                         0
+  mother                              0                        1                       2                         1
+  realizes                            3                        1                       1                         0
+  returns                             1                        2                       0                         3
+  tornado                             0                       28                       0                         0
+  tries                               3                        0                       3                         1
+  white                              29                        0                       0                         0
+
+Metody ustalania liczby klastrów - dużo różnych
+Silhouette - b. dokładna, ale dla dużego korpusu zajmie bardzo dużo czasu
+Łokcia - liczy wariancję w klastrze dla danego k, zwiększa k, liczy wariancję, ... gdy wariancja przestaje się zmniejszać - stop; szybka (szczególnie dla danych liczbowych) ale subiektywna
+
+fviz_cluster(list(data = dtm_m, cluster = klastrowanie$cluster),
+             geom = "point",
+             main = "Wizualizacja klastrów dokumentów")
+rysuje rzut wektorów na 2 wymiary, które najbardziej pokazują co? jak wybrane są wymiary
+
+
