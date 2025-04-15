@@ -1,0 +1,26 @@
+Metodyki Agile i Waterfall
+
+kaskadowy/wodospadowy
+inkrementacyjny/iteracyjny/przyrostowy
+
+Agile jest metodą lepszą do tworzenia nowoczesnych systemów informatycznych:
+  - w trakcie pracy na projektem mogą zmienić się potrzeby klienta i dla niewywołania niezadowolenia klienta potrzebne są możliwości wprowadzania zmian
+  - w przypadku obserwacji procesu wytwarzania oprogramowania zrozumienie klienta może się zmienić, co poprowadzi do zmiany wymagań i uzyskania lepszego produkru ostatecznie
+  - wykrycie (a więc i naprawienie) błędów jest łatwiejsze przez testowanie mniejszych części systemu
+  - usprawnia komunikację
+  - współpraca z klientem. a nie przeciwstawienie (negocjacje kontraktowe)
+
+
+Waterfall jest lepszy dla:
+  - branże mocno regulowane (bankowość, medycyna, lotniczy etc)
+  - tam, gdzie ważne jest bezpieczeństwo 
+  - branże gdzie rzadko zmieniają się wymagania
+  - projekty z ustalonym budżetem / deadline
+  - legacy code
+  - małe proste projekty
+  - b. duże projekty z różnymi obszarami odpowiedzialności i szczegółowymi, niezmiennymi specyfikacjami
+
+LDA - Latent Dirichlet Allocation - topic modelling technique for uncovering the central topics and their distributions across a set of documents; metoda probabilistyczna
+W tym podejściu: każdy dokument - rozkład prawdopodobieństwa tematów, a każdy temat - rozkład prawdopodobieństwa tematów. Zakładamy, że rozkład Dirichleta istnieje, a tematy to zmienne niewiadome, które chcemy wykryć
+
+manifest Agile - 2001 - najnowoczesniejsze podejście 
