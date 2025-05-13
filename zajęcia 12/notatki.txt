@@ -1,0 +1,33 @@
+Zajęcia 12. Podejście TFIDF w algorytmach data science
+
+TF-IDIF - Term Frequency - Inverse Document Frequency
+
+TFIDF(w, d, D) = TF(w, d) * IDF (w, D)
+gdzie IDF(w, D) = ln(N of documents in corpus/n of documents containing the term)
+TF(w, d) = n(w|d)/length(d) \\znormalizowana częstość
+
+tdm_tfidf <- TermDocumentMatrix(corpus,
+                                control = list(weighting = function(x) weightTfIdf(x, normalize = FALSE)))
+\\w tej implementacji logarytm o podstawie 2 oraz TF = number of occurrences
+
+print(tail(tdm_tfidf_df, 10))
+               word     freq
+wizz           wizz 6.643856
+wizzair     wizzair 6.643856
+wonderful wonderful 6.643856
+wondering wondering 6.643856
+worn           worn 6.643856
+write         write 6.643856
+wroclaw     wroclaw 6.643856
+wrote         wrote 6.643856
+yearold     yearold 6.643856
+zoo             zoo 6.643856
+# 6,64 to log_2(100), czyli terminy, które pojawiają się jednokrotnie w korpusie
+
+# Chmura słów (globalna)
+# 5*log_2(100/5)=21,6; czyli freq > 21,6 to słowa, które są obecne więcej niż w 5 dokumentach
+wordcloud(words = tdm_tfidf_df$word, freq = tdm_tfidf_df$freq, min.freq = 7, 
+          colors = brewer.pal(8, "Dark2"))
+#obcina tylko terminy, które pojawiają się jednokrotnie w korpusie, bo 2*log_2(100/2) = 11.287712 - druga najniższa częstość w tdm_tfidf_df
+
+
