@@ -22,6 +22,9 @@ wroclaw     wroclaw 6.643856
 wrote         wrote 6.643856
 yearold     yearold 6.643856
 zoo             zoo 6.643856
+
+Co to 6.643856? H1 - jednokrotne pojawienie się; csv - 101 wiersz -> ln 101 - nie; e^6.64 za dużo; ostatni element w corpus - [100][1]; inny wzór? różne implementacje mogą mieć różne wzory 
+
 # 6,64 to log_2(100), czyli terminy, które pojawiają się jednokrotnie w korpusie
 
 # Chmura słów (globalna)
