@@ -1,0 +1,27 @@
+data lakehouse
+UML - unified modeling language
+
+sortowanie listów - post codes (lata 90. ?)
+2010, 2014 pojawiają się inne rzeczy
+
+backpropagation
+
+MSE - mean square error
+
+nowa waga = stara waga - (learning rate)*(pochodna błędu po wadze)
+perceptron:
+bias = -(wartość progowa)
+
+ReLU = max{x, 0} - zaproponowana w 2010
+
+dense 
+fully connected - wszystkie neurony jednej warstwy połączone z wszystkimi drugiej
+
+3+ warstw - Deep Learning
+
+drop out
+
+funkcja aktywacji - ta sama w jednej warstwie
+typ funkcji => typ wartstwy
+
+
